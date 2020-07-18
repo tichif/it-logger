@@ -1,25 +1,25 @@
 {
   "logs": [
     {
-      "id": 1,
-      "message": "Repair workstation 001",
+      "message": "Repair workstation 027",
+      "tech": "John Doe",
+      "attention": false,
+      "date": "2020-07-18T00:00:57.742Z",
+      "id": 1
+    },
+    {
+      "message": "Server 001 cannot load",
+      "tech": "Robert Horry",
       "attention": true,
-      "date": "07-13-2020",
-      "tech": "Sam Smith"
+      "date": "2020-07-18T00:01:35.071Z",
+      "id": 2
     },
     {
-      "id": 2,
-      "message": "Workstation 007 not posting",
-      "attention": false,
-      "date": "07-14-2020",
-      "tech": "John Doe"
-    },
-    {
-      "id": 3,
-      "message": "Change memory in workstation 008",
-      "attention": false,
-      "date": "07-15-2020",
-      "tech": "Sara Wilson"
+      "message": "1122 wireless down",
+      "tech": "John Doe",
+      "attention": true,
+      "date": "2020-07-18T00:03:29.661Z",
+      "id": 3
     }
   ],
   "techs": [

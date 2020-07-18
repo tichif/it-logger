@@ -13,13 +13,6 @@
       "attention": true,
       "date": "2020-07-18T00:01:35.071Z",
       "id": 2
-    },
-    {
-      "message": "1122 wireless down",
-      "tech": "John Doe",
-      "attention": true,
-      "date": "2020-07-18T00:03:29.661Z",
-      "id": 3
     }
   ],
   "techs": [

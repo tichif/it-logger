@@ -29,6 +29,12 @@ export default (state = initialState, action) => {
         loading: false,
         logs: [...state.logs, action.payload],
       };
+    case DELETE_LOG:
+      return {
+        ...state,
+        loading: false,
+        logs: state.logs.filter((log) => log.id !== action.payload),
+      };
     case LOGS_ERROR:
       console.error(action.payload);
       return {

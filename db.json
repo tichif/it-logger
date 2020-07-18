@@ -1,11 +1,11 @@
 {
   "logs": [
     {
+      "id": 1,
       "message": "Repair workstation 027",
       "tech": "John Doe",
       "attention": false,
-      "date": "2020-07-18T00:00:57.742Z",
-      "id": 1
+      "date": "2020-07-18T01:51:08.520Z"
     },
     {
       "message": "Server 001 cannot load",

@@ -13,6 +13,13 @@
       "attention": true,
       "date": "2020-07-18T00:01:35.071Z",
       "id": 2
+    },
+    {
+      "message": "Laptop HP 15 does not load",
+      "tech": "Tichif Dalzon",
+      "attention": true,
+      "date": "2020-07-18T15:31:15.525Z",
+      "id": 3
     }
   ],
   "techs": [

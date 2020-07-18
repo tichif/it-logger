@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Moment from 'react-moment';
 import PropTypes from 'prop-types';
-import { deleteLog, setCurrent, clearCurrent } from '../../actions/logActions';
+import { deleteLog, setCurrent } from '../../actions/logActions';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-const LogItem = ({ log, deleteLog, setCurrent, clearCurrent }) => {
+const LogItem = ({ log, deleteLog, setCurrent }) => {
   const { id, tech, date, attention, message } = log;
 
   const onDelete = () => {
@@ -43,7 +43,6 @@ LogItem.propTypes = {
   log: PropTypes.object.isRequired,
   deleteLog: PropTypes.func.isRequired,
   setCurrent: PropTypes.func.isRequired,
-  clearCurrent: PropTypes.func.isRequired,
 };
 
-export default connect(null, { deleteLog, setCurrent, clearCurrent })(LogItem);
+export default connect(null, { deleteLog, setCurrent })(LogItem);

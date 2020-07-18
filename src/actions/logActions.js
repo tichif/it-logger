@@ -4,10 +4,10 @@ import {
   DELETE_LOG,
   UPDATE_LOG,
   LOGS_ERROR,
-  CLEAR_LOGS,
   SET_LOADING,
   SET_CURRENT,
   CLEAR_CURRENT,
+  SEARCH_LOGS,
 } from './types';
 
 // Get logs from a server
@@ -137,4 +137,23 @@ export const clearCurrent = () => {
   return {
     type: CLEAR_CURRENT,
   };
+};
+
+// Search Logs
+export const searchLogs = (text) => async (dispatch) => {
+  try {
+    setLoading();
+    const res = await fetch(`/logs?q=${text}`);
+    const data = await res.json();
+
+    dispatch({
+      type: SEARCH_LOGS,
+      payload: data,
+    });
+  } catch (error) {
+    dispatch({
+      type: LOGS_ERROR,
+      payload: error.response.data,
+    });
+  }
 };

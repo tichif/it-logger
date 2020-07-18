@@ -4,7 +4,7 @@ import {
   DELETE_LOG,
   UPDATE_LOG,
   LOGS_ERROR,
-  CLEAR_LOGS,
+  SEARCH_LOGS,
   SET_LOADING,
   SET_CURRENT,
   CLEAR_CURRENT,
@@ -65,6 +65,11 @@ export default (state = initialState, action) => {
       return {
         ...state,
         current: null,
+      };
+    case SEARCH_LOGS:
+      return {
+        ...state,
+        logs: action.payload,
       };
     default:
       return state;
